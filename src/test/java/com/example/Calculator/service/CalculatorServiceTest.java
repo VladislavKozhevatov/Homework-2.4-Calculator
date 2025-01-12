@@ -7,15 +7,6 @@ public class CalculatorServiceTest {
 
     private final CalculatorService calculatorService = new CalculatorService();
 
-
-//        public void plus() {
-//            //arrange
-//            var calculator = new CalculatorService();
-//            //act
-//            var result = calculator.plus(2, 5);
-//            //assert
-//            Assertions.assertArrayEquals(7, 7);
-//        }
     @Test
     public void plus() {
 

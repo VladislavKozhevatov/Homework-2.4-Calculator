@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorService implements CalculatorServiceInterface {
 
-
     public Integer plus(Integer num1, Integer num2) {
         if (num1 == null || num2 == null) {
             return Integer.valueOf("одно или оба значений равны нулю");
@@ -25,7 +24,6 @@ public class CalculatorService implements CalculatorServiceInterface {
       //  return Integer.valueOf("Результат = " + num1 + "-" + num2 + "=" + result);
         return result;
     }
-
 
     public Integer multiply(Integer num1, Integer num2) {
         if (num1 == null || num2 == null) {

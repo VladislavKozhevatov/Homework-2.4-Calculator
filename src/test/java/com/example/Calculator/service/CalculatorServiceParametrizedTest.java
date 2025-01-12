@@ -71,7 +71,7 @@ public class CalculatorServiceParametrizedTest {
         }
 
         //then
-        Assertions.assertEquals
+        Assertions.assertEquals(expectedResult,actualResult);
 
     }
 
