@@ -20,8 +20,10 @@ public class CalculatorService implements CalculatorServiceInterface {
         if (num1 == null || num2 == null) {
             return Integer.valueOf("одно или оба значений равны нулю");
         }
-        int result = num1 - num2;
-        return Integer.valueOf("Результат = " + num1 + "-" + num2 + "=" + result);
+        int result;
+        result = num1 - num2;
+      //  return Integer.valueOf("Результат = " + num1 + "-" + num2 + "=" + result);
+        return result;
     }
 
 
@@ -30,13 +32,15 @@ public class CalculatorService implements CalculatorServiceInterface {
             return Integer.valueOf("одно или оба значений равны нулю");
         }
         int result = num1 * num2;
-        return Integer.valueOf("Результат = " + num1 + "*" + num2 + "=" + result);
+     //   return Integer.valueOf("Результат = " + num1 + "*" + num2 + "=" + result);
+        return result;
     }
 
     public double devide(double num1, double num2) {
         double result = num1 / num2;
         if (num1 != 0 & num2 != 0) {
-            return Integer.valueOf("Результат = " + num1 + "/" + num2 + "=" + result);
+          //  return Integer.valueOf("Результат = " + num1 + "/" + num2 + "=" + result);
+            return result;
         }
         if (num1 == 0 || num2 == 0) {
             throw new DevideByZeroExeprion("Делить на ноль нельзя");

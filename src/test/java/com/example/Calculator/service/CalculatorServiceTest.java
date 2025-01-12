@@ -7,7 +7,7 @@ public class CalculatorServiceTest {
 
     private final CalculatorService calculatorService = new CalculatorService();
 
-    @Test
+
 //        public void plus() {
 //            //arrange
 //            var calculator = new CalculatorService();
@@ -16,7 +16,7 @@ public class CalculatorServiceTest {
 //            //assert
 //            Assertions.assertArrayEquals(7, 7);
 //        }
-
+    @Test
     public void plus() {
 
         //given
@@ -28,22 +28,49 @@ public class CalculatorServiceTest {
         Integer actualResult = calculatorService.plus(num1, num2);
 
         //Then
-        Assertions.assertArrayEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void minus() {
         //given
-        Integer num1 = 3;
+        Integer num1 = 6;
         Integer num2 = 2;
-        Integer expectedResult = 1;
+        Integer expectedResult = 4;
 
         //when
         Integer actualResult = calculatorService.minus(num1, num2);
 
         //Then
-        Assertions.assertArrayEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void multiply() {
+        //given
+        Integer num1 = 3;
+        Integer num2 = 2;
+        Integer expectedResult = 6;
 
+        //when
+        Integer actualResult = calculatorService.multiply(num1, num2);
+
+        //Then
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void devide() {
+        //given
+        Integer num1 = 4;
+        Integer num2 = 2;
+        double expectedResult = 2.0;
+
+        //when
+        double actualResult = calculatorService.devide(num1, num2);
+
+        //Then
+        Assertions.assertEquals(expectedResult, actualResult);
+
+    }
 }
