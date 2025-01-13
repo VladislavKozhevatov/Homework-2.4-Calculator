@@ -39,7 +39,6 @@ public class CalculatorController {
     public double devide(@RequestParam(value = "num1") double num1, @RequestParam(value = "num2") double num2) {
         return calculatorService.devide(num1, num2);
     }
-
 }
 
 

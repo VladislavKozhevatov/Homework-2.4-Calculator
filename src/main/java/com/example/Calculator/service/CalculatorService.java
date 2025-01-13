@@ -45,6 +45,4 @@ public class CalculatorService implements CalculatorServiceInterface {
         }
         return Integer.valueOf("введите значение");
     }
-
-
 }

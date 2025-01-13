@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
 import java.util.stream.Stream;
 
 public class CalculatorServiceParametrizedTest {
@@ -62,18 +61,15 @@ public class CalculatorServiceParametrizedTest {
 
     @ParameterizedTest
     @MethodSource("argumentProvider")
-    void devide (int num1, int num2){
+    void devide (double num1, double num2){
         //given
         double expectedResult = num1 / num2;
 
         //when
         double actualResult = calculatorService.devide(num1,num2);
-        }
 
         //then
         Assertions.assertEquals(expectedResult,actualResult);
 
     }
-
-
 }
